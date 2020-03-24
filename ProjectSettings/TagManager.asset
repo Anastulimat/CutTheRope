@@ -9,6 +9,8 @@ TagManager:
   - Candy
   - EatAnimation
   - SadAnimation
+  - Bubble
+  - CandyBubbleCover
   layers:
   - Default
   - TransparentFX
