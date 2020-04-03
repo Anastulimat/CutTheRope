@@ -11,6 +11,8 @@ TagManager:
   - SadAnimation
   - Bubble
   - CandyBubbleCover
+  - Rope
+  - Pump
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Candy
   - 
   - 
   - 

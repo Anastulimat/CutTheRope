@@ -28,13 +28,16 @@ public class StarController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        isStarInCollision = true;
-        audioSource.PlayOneShot(starSound);
-        SpriteRenderer[] spriteRenderers = gameObject.GetComponentsInChildren<SpriteRenderer>();
-        foreach (SpriteRenderer spr in spriteRenderers)
+        if(collider.gameObject.CompareTag("Candy"))
         {
-            spr.enabled = false;
+            isStarInCollision = true;
+            audioSource.PlayOneShot(starSound);
+            SpriteRenderer[] spriteRenderers = gameObject.GetComponentsInChildren<SpriteRenderer>();
+            foreach (SpriteRenderer spr in spriteRenderers)
+            {
+                spr.enabled = false;
+            }
+            Destroy(gameObject, 1f);
         }
-        Destroy(gameObject, 1f);
     }
 }
